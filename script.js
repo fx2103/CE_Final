@@ -7,7 +7,7 @@ let placeholderImage;
 let buttonImage;
 let folderNames = ["Bad Speaker", "Chewing", "Metal Friction", "Snoring", "Styrofoam"];
 let soundFiles = [
-  "sound/bad speaker.mp3",
+  "/CE_Final/sound/bad speaker.mp3",
   "sound/chewing.mp3",
   "sound/metal friction.mp3",
   "sound/snoring.mp3",

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match the Sound</title>
+  <!-- Link to styles -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <!-- Include p5.sound.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+</head>
+<body>
+  <div class="retro-window">
+    <div class="title-bar">
+      <span>Match the Sound: Retro Edition</span>
+      <div class="window-controls">
+        <div class="control-button close-button" onclick="showPopup()">X</div>
+        <div class="control-button minimize-button" onclick="showPopup()">_</div>
+        <div class="control-button maximize-button" onclick="showPopup()">□</div>
+      </div>
+    </div>
+    <div id="canvas-container"></div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <div class="status-icon">
+        <img src="Windows logo (without text) copy.png" alt="Windows Logo">
+      </div>
+      <div class="status-buttons">
+        <button id="button1" onclick="togglePopup('button1')">Button 1</button>
+        <button id="button2" onclick="togglePopup('button2')">Button 2</button>
+        <button id="button3" onclick="togglePopup('button3')">Button 3</button>
+      </div>
+      <div class="status-text">
+        <span>Status: Ready</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Retro-style Pop-up -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <div class="popup-title-bar">
+        <span id="popup-title">System Message</span>
+        <div class="popup-close-button" onclick="closePopup()">X</div>
+      </div>
+      <div class="popup-body">
+        <p id="popup-message">Uh, not just yet. 😈</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to script -->
+  <script src="script.js"></script>
+</body>
+</html>
